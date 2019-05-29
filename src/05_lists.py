@@ -24,7 +24,7 @@ print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 99, 10]
 # YOUR CODE HERE 
-x.append(99)
+x.insert(4, 99)
 print(x)
 
 # Print the length of list x
