@@ -1,3 +1,4 @@
+
 """
 Python makes performing file I/O simple. Take a look
 at how to read and write to files here: 
@@ -9,6 +10,10 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # Print all the contents of the file, then close the file
 
 # YOUR CODE HERE
+foo = open("/Users/babakiki/LambdaComputerScience/Intro-Python-I/src/foo.txt")
+foo_content = foo.read()
+print(foo_content)
+foo.close()
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
@@ -16,3 +21,6 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
+bar = open("/Users/babakiki/LambdaComputerScience/Intro-Python-I/src/bar.txt", "w+")     #the w+ wants to read and write and add if it doesnt exist
+bar.write(" Yoo ple you \n Whala yalaaal \n Zooo too foo ")
+bar.close()

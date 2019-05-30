@@ -44,6 +44,14 @@ d = print_tuple[3]
 e = print_tuple[4]
 print(a, b, c, d, e)  # Prints 1 2 5 7 99, one per line
 
+t = (1, 2, 5, 7, 99)
+def print_tuple2(t):
+    for value in t:
+        print(value)
+
+print_tuple2(t)
+
 # Declare a tuple of 1 element then print it
-u = (1)  # What needs to be added to make this work?
-print(u)
+u = (1,)  # What needs to be added to make this work?
+print(u[0])
+# might work without the index thingy
